@@ -17,14 +17,11 @@ public class RotateByKNum {
         }
         System.out.println(Arrays.toString(arr));
         k = k % len;
-        while (k > 0) {
-            for (int i = 1; i < len; i++) {
-                arr[i - 1] = arr[i];
-            }
-            arr[len - 1] = arr[0];
-            k--;
-        }
-        System.out.println(Arrays.toString(arr));
+        int[] rotated=new int[len];
+       for(int i=0;i<len;i++){
+        rotated[i]=arr[(i+k)%len];
+       }
+        System.out.println(Arrays.toString(rotated));
         sc.close();
     }
 }
