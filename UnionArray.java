@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 //Find the union of two arrays
 public class UnionArray {
